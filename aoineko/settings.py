@@ -25,7 +25,7 @@ SECRET_KEY = 'izon0aq^&%v80qk*u76#=jy(vesp$re%75wo9yncsy+u8hp6s+'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['pyrest']
 
 
 # Application definition
@@ -80,7 +80,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'OPTIONS': {
             'read_default_file': './my.cnf',
-            'host': '192.168.31.218',
+            'host': 'mysqldb',
             'password': '456123',
             'port': 3306,
             'db': 'aoineko'
@@ -128,6 +128,7 @@ USE_L10N = True
 
 USE_TZ = True
 
+DEFAULT_CHARSET = 'utf-8'
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.2/howto/static-files/

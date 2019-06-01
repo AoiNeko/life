@@ -9,7 +9,7 @@ from blog.models import post
 class TestModelDefinition(TransactionTestCase):
     def testGetPost(self):
         """测试model增查"""
-        test1 = post(content='test1', title='title1')
+        test1 = post(content='test2', title='title2')
         test1.save()
         list = post.objects.all()
         print("ctest 11")
